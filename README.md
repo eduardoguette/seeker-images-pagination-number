@@ -2,12 +2,12 @@
 Buscador de imagenes utilizando paginación por número consumiendo la API de [PIXABAY](https://pixabay.com/es/service/about/api/).
 
 
-## [LIVE DEMO / PRUEBALO AQUÍ](https://pixapic.vercel.app/) ✔
+## [LIVE DEMO / PRUEBALO AQUÍ](https://eduardoguette.github.io/seeker-images-pagination-number/) ✔
 
 _Cosas hechas:_
 
 - Consumiendo la API de Pixabay
-- Estilo de Cards inspirados en componente card de Material.io
+- Estilo de Cards inspirados en componente card de [material.io](https://material.io/components/cards#behavior)
 - Paginación por número realizada con un generador de Javascript
 
 ## Construido con 🛠️
