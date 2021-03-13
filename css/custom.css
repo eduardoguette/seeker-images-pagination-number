@@ -1,0 +1,22 @@
+body {
+  background: #f1f1f1; /* fallback for old browsers */
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+.card {
+  animation: toUp 0.4s linear both;
+}
+
+@keyframes toUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
