@@ -13,6 +13,7 @@ let iterador
 buscarImagenes()
 function validarFormulario(e) {
   e.preventDefault()
+  pagina = 1
   limpiarHTML(resultado)
   buscarImagenes()
 }
