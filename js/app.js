@@ -16,6 +16,7 @@ function validarFormulario(e) {
   pagina = 1
   limpiarHTML(resultado)
   buscarImagenes()
+  window.location.hash = ""
 }
 
 function buscarImagenes() {
@@ -81,12 +82,11 @@ function imprimirPaginador() {
     
     // caso contrario genera un btn por cada elemento en el generador
     const button = document.createElement('a')
-    button.href = '#'
+    button.href = '#'+value
     button.dataset.pagina = value
     button.textContent = value;
     button.className = "siguiente bg-yellow-400 mx-1 p-1 text-xs rounded  my-2"
     button.onclick = () => {
-      window.location.hash = value
       pagina = value
       buscarImagenes()
     }
