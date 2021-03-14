@@ -86,7 +86,7 @@ function imprimirPaginador() {
     button.textContent = value;
     button.className = "siguiente bg-yellow-400 mx-1 p-1 text-xs rounded  my-2"
     button.onclick = () => {
-       
+      window.location.hash = value
       pagina = value
       buscarImagenes()
     }
@@ -96,7 +96,7 @@ function imprimirPaginador() {
 }
 
 window.addEventListener('scroll', () => {
-  document.querySelectorAll('#resultado img[src]').forEach((elem) => {
+  document.querySelectorAll('.info img[src]').forEach((elem) => {
     if (elem.getAttribute('src') === '') {
       elem.setAttribute('src', 'http://www.jdevoto.cl/web/wp-content/uploads/2018/04/default-user-img.jpg')
     }
